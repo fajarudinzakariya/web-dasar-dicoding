@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-color: #0077b6;
+}
+p {
+    font-size: 20px;
+    text-indent: 2em;
+    font-family: serif;
+    text-align: justify;
+}
+
+h1, h2 {
+    color: black;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #2b229d;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#letter-spacing {
+    letter-spacing: 4px;
+}
+
+
+
+/* Header */
+.judul {
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #4361ee;
+    text-align: center;
+    color: black;
+}
+
+
+/*  Navbar */
+nav {
+    background-color: #2c169a;
+    padding: 5px;
+    position: sticky;
+    top: 0%;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* Image */
+.image {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .2s;
+    border-radius: 10px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+/*  Main */
+.content {
+    float: left;
+    width: 70%;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+/*  Aside */
+aside {
+    float: right;
+    width: 30%;
+    padding: 100px;
+}
+
+.profile {
+    font-family: unset;
+    text-align: center;
+    width: 350px;
+}
+
+/*  Footer */
+footer {
+    padding: 15px;
+    color: white;
+    background-color: #2b229d;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+        
+    }
+}
